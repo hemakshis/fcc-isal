@@ -70,6 +70,6 @@ router.get('/searches/latest', function(req, res){
       res.json(searches);
     }
   });
-})
+});
 
 module.exports = router;
