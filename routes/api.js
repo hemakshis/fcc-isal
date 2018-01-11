@@ -27,7 +27,7 @@ router.get('/:query', function(req, res){
       }
       var resultData = [];
       response.json().then(function(data) {
-        data.items.forEach(function(img, index){
+        data.items.forEach(function(img){
           resultData.push({
             "title":img.title,
             "imgLink":img.link,
@@ -58,7 +58,17 @@ router.get('/:query', function(req, res){
 router.get('/searches/latest', function(req, res){
   Search.find({}).sort({when: -1}).limit(10).exec(function(err, posts){
     if (err) throw err;
-    else res.json(posts);
+    else {
+      var searches = [];
+      posts.forEach(function(search){
+        searches.push({
+          "term":search.term,
+          "when":search.when
+        });
+      });
+
+      res.json(searches);
+    }
   });
 })
 
