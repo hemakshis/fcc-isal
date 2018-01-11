@@ -9,6 +9,7 @@
 
 ### Example Query Output
 An array of objects showing 10 search results (You can paginate through the results by passing an offset query). Format of one such object is:-
+
 `{
   "title": "Taj Mahal - Wikipedia",
   "imgLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1200px-Taj_Mahal_%28Edited%29.jpeg",
@@ -21,4 +22,5 @@ An array of objects showing 10 search results (You can paginate through the resu
 
 ### Example Latest Output
 An array of objects showing latest 10 searches done. Format of one such object is:-
+
 `{"term": "taj mahal", "when": "2018-01-11T09:43:22.962Z"}`
