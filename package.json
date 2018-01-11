@@ -1,0 +1,20 @@
+{
+  "name": "isal",
+  "version": "1.0.0",
+  "description": "An Image Search Abstraction Layer that searches for images and returns the result in JSON format. Also one can browse recent search queries.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Hemakshi Sachdev",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7",
+    "node-fetch": "^1.7.3",
+    "nodemon": "^1.14.1",
+    "pug": "^2.0.0-rc.4"
+  }
+}
